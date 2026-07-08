@@ -1,0 +1,15 @@
+==========================================================================
+Limoni Otel Shared - Ortak Görseller Listesi
+==========================================================================
+
+Bu klasöre sitenin geneli için ortak olan logoları ve faviconu eklemeniz gerekmektedir.
+
+1. logo.png veya logo.svg
+   - Sitenin sol üstündeki menüde ve footer alanında gözükecek olan marka logosu.
+   - Arka planı şeffaf (transparent PNG veya vektörel SVG) olmalıdır.
+   - Sitenin tasarımına uyması için koyu altın/bej tonlarında veya beyaz renkte olması önerilir.
+
+2. favicon.png
+   - Tarayıcı sekmesinde çıkacak olan küçük ikon.
+   - Kare formatta olmalıdır.
+   - Tavsiye edilen boyut: 32x32 piksel veya 64x64 piksel.

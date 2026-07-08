@@ -1,0 +1,12 @@
+{
+  "name": "limoni-otel",
+  "version": "1.0.0",
+  "description": "Limoni Otel Alacati & Koyici Multi-Domain Web App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

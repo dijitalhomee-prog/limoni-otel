@@ -1,0 +1,25 @@
+==========================================================================
+Limoni Otel Alaçatı - Fotoğraf Yükleme Listesi
+==========================================================================
+
+Bu klasöre aşağıdaki isimlerde fotoğraflar eklemeniz gerekmektedir. Fotoğrafların formatı .jpg veya .png olabilir.
+
+1. hero.jpg
+   - Otelin ana kapak görselidir (girişte arka planda gözükür).
+   - Yatay (16:9) formatta, yüksek kaliteli olmalıdır.
+   - Tavsiye edilen boyut: 1920x1080 piksel.
+
+2. ticker1.jpg, ticker2.jpg, ticker3.jpg, ticker4.jpg, ticker5.jpg, ticker6.jpg
+   - Sitede sonsuz döngüde (kayarak) geçen galeri fotoğraflarıdır.
+   - Otelin bahçesi, havuzu, kahvaltısı ve genel atmosferini yansıtmalıdır.
+   - Yatay veya 4:3 formatta olabilir. Hepsinin benzer en-boy oranında olması estetik açıdan daha iyidir.
+   - Tavsiye edilen boyut: 800x600 piksel.
+
+3. Odaların Fotoğrafları (Tıklanınca büyük açılır):
+   - room_101.jpg  -> 101 Ada Odası görseli
+   - room_102.jpg  -> 102 Mina Odası görseli
+   - room_103.jpg  -> 103 Lina Odası görseli
+   - room_201.jpg  -> 201 İrem Odası görseli
+   - room_202.jpg  -> 202 Yaren Odası görseli
+   - room_203.jpg  -> 203 Su Odası görseli
+   - Hepsi yatay formatta ve kaliteli olmalıdır. Tavsiye edilen boyut: 800x600 piksel.

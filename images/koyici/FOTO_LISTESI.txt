@@ -1,0 +1,32 @@
+==========================================================================
+Limoni Otel Köyiçi - Fotoğraf Yükleme Listesi
+==========================================================================
+
+Bu klasöre aşağıdaki isimlerde fotoğraflar eklemeniz gerekmektedir. Fotoğrafların formatı .jpg veya .png olabilir.
+
+1. begonvil_kapi.png
+   - Otelin girişinde sağ tarafta bulunan suluboya kapı ve begonvil illüstrasyonudur.
+   - (Görsel otomatik olarak kopyalanmıştır, değiştirmeniz gerekmez.)
+
+2. kahvalti.jpg
+   - Avluda servis edilen yöresel serpme kahvaltı görselidir.
+   - Tavsiye edilen boyut: 800x1000 piksel (dikey/portre formatta daha iyi durur).
+
+3. hero.jpg
+   - Köyiçi şubesinin eski kapak görselidir (şu an illüstrasyon kullanıldığı için yedek olarak durur).
+   - Yatay (16:9) formatta, yüksek kaliteli olmalıdır.
+   - Tavsiye edilen boyut: 1920x1080 piksel.
+
+4. ticker1.jpg, ticker2.jpg, ticker3.jpg, ticker4.jpg, ticker5.jpg, ticker6.jpg
+   - Sitede sonsuz döngüde (kayarak) geçen galeri fotoğraflarıdır.
+   - Otelin taş binası, avlusu, kahvaltısı ve genel atmosferini yansıtmalıdır.
+   - Yatay veya 4:3 formatta olabilir.
+   - Tavsiye edilen boyut: 800x600 piksel.
+
+5. Odaların Fotoğrafları (Tıklanınca büyük açılır):
+   - room_101.jpg  -> 101 Lamas Odası görseli
+   - room_102.jpg  -> 102 Lime Odası görseli
+   - room_201.jpg  -> 201 Yuzu Odası görseli
+   - room_202.jpg  -> 202 Volkamer Odası görseli
+   - room_203.jpg  -> 203 Mayer Odası görseli
+   - Hepsi yatay formatta ve kaliteli olmalıdır. Tavsiye edilen boyut: 800x600 piksel.
