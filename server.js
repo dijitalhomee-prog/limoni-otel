@@ -2,38 +2,31 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
+const BRANCH = process.env.BRANCH || 'portal';
 
-// Host-based routing middleware
+console.log(`Initializing server for BRANCH: ${BRANCH}`);
+
+// 1. Redirect index.html on sub-domains back to the main portal domain
 app.use((req, res, next) => {
   const host = req.headers.host || '';
   const urlPath = req.path;
 
-  // 1. Root path routing based on domain name
-  if (urlPath === '/') {
-    // If the host is Alacati branch domain (production or dev/Railway preview)
-    if (host.includes('limoniotelalacati.com') || host.includes('alacati')) {
-      return res.sendFile(path.join(__dirname, 'alacati.html'));
-    }
-    // If the host is Koyici branch domain (production or dev/Railway preview)
-    if (host.includes('limoniotelkoyici.com') || host.includes('koyici')) {
-      return res.sendFile(path.join(__dirname, 'koyici.html'));
-    }
-    // Default to main portal page
-    return res.sendFile(path.join(__dirname, 'index.html'));
+  if (urlPath === '/index.html' && BRANCH !== 'portal') {
+    return res.redirect(301, 'https://limoniotel.com/');
   }
-
-  // 2. Redirect index.html on sub-domains back to the main portal domain
-  if (urlPath === '/index.html') {
-    const isSubDomain = host.includes('limoniotelalacati.com') || 
-                        host.includes('alacati') || 
-                        host.includes('limoniotelkoyici.com') || 
-                        host.includes('koyici');
-    if (isSubDomain) {
-      return res.redirect(301, 'https://limoniotel.com/');
-    }
-  }
-
   next();
+});
+
+// 2. Serve branch-specific homepage at root path '/'
+app.get('/', (req, res) => {
+  if (BRANCH === 'alacati') {
+    return res.sendFile(path.join(__dirname, 'alacati.html'));
+  }
+  if (BRANCH === 'koyici') {
+    return res.sendFile(path.join(__dirname, 'koyici.html'));
+  }
+  // Default to main portal page
+  return res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Serve static assets and other files
@@ -45,5 +38,6 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Limoni Otel Server is running on port ${PORT}`);
+  console.log(`🚀 Limoni Otel (${BRANCH}) Server is running on port ${PORT}`);
 });
+
