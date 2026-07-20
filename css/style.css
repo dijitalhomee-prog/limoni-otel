@@ -2489,4 +2489,186 @@ footer {
   }
 }
 
+/* ==========================================================================
+   Mobile Responsive Optimization (Smartphones & Tablets)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Navbar & Logo Scaling */
+  .logo img {
+    height: 90px !important;
+    max-height: 90px !important;
+  }
+  .navbar.scrolled .logo img {
+    height: 75px !important;
+    max-height: 75px !important;
+  }
+  .navbar {
+    padding: 0.6rem 0;
+  }
 
+  /* Universal Image Framing & Smooth Aspect Ratios */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Portal Page Split Screen on Mobile */
+  .portal-hero {
+    height: auto;
+    min-height: 100vh;
+  }
+  .portal-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  .portal-side {
+    min-height: 50vh;
+    padding: 2.5rem 1.25rem;
+  }
+  .portal-bg-img {
+    object-fit: cover;
+    object-position: center center;
+  }
+  .portal-branch-illustration {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  /* Hero Section on Subpages */
+  .hero {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    min-height: auto;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 6rem 1.25rem 3rem 1.25rem;
+  }
+  .hero-text-content {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.6rem;
+    line-height: 1.15;
+  }
+  .hero-desc {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .hero-illustration-box {
+    margin-top: 1rem;
+  }
+  .hero-illustration {
+    max-height: 38vh;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  /* About Gallery Grid on Mobile */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .about-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about-img-box {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    border-radius: var(--radius-md);
+  }
+  .about-img-box img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .about-img-box.offset-img {
+    margin-top: 0;
+  }
+
+  /* Photo Ticker Gallery Slider on Mobile */
+  .ticker-item {
+    width: 290px;
+    height: 210px;
+    border-radius: 12px;
+  }
+  .ticker-item img {
+    object-fit: cover;
+    object-position: center;
+  }
+  .ticker-track {
+    gap: 1rem;
+  }
+
+  /* Room Cards Slider on Mobile */
+  .rooms-grid {
+    gap: 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+  .room-card {
+    flex: 0 0 85vw;
+    border-radius: 16px;
+  }
+  .room-card-img {
+    height: 230px;
+  }
+  .room-card-img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Breakfast Section Slider */
+  .breakfast-slider-container {
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+  }
+  .breakfast-slide img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Map Modal Responsive */
+  .map-modal-content {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+  .map-img-container {
+    max-height: 55vh;
+  }
+
+  /* Footer & Credits */
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .section-title {
+    font-size: 1.9rem;
+  }
+  .about-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .about-img-box {
+    aspect-ratio: 16 / 10;
+  }
+  .room-card {
+    flex: 0 0 88vw;
+  }
+  .ticker-item {
+    width: 250px;
+    height: 180px;
+  }
+}
